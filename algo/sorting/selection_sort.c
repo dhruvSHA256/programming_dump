@@ -8,7 +8,6 @@ int main()
 {
     int i, n;
     int array[MAX];
-
     printf("\nEnter Size of Array : ");
 
     scanf("%d", &n);

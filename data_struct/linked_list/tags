@@ -1,0 +1,45 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/a3c87ab5/
+data	circular_linked_list.c	/^  int data;$/;"	m	struct:list	typeref:typename:int	file:
+data	douby_linked_list.c	/^    int data;$/;"	m	struct:list	typeref:typename:int	file:
+data	linked_list.c	/^  int data;$/;"	m	struct:list	typeref:typename:int	file:
+del_beg	circular_linked_list.c	/^void del_beg(struct list **topnode) {$/;"	f	typeref:typename:void
+del_beg	douby_linked_list.c	/^void del_beg(struct list **topnode)$/;"	f	typeref:typename:void
+del_beg	linked_list.c	/^void del_beg(struct list **topnode) {$/;"	f	typeref:typename:void
+del_end	circular_linked_list.c	/^void del_end(struct list *topnode) {$/;"	f	typeref:typename:void
+del_end	douby_linked_list.c	/^void del_end(struct list **topnode)$/;"	f	typeref:typename:void
+del_end	linked_list.c	/^void del_end(struct list *topnode) {$/;"	f	typeref:typename:void
+del_pos	circular_linked_list.c	/^void del_pos(struct list *topnode, int pos) {$/;"	f	typeref:typename:void
+del_pos	douby_linked_list.c	/^void del_pos(struct list *topnode, int pos)$/;"	f	typeref:typename:void
+del_pos	linked_list.c	/^void del_pos(struct list *topnode, int pos) {$/;"	f	typeref:typename:void
+freeList	circular_linked_list.c	/^void freeList(struct list *topnode) {$/;"	f	typeref:typename:void
+freeList	douby_linked_list.c	/^void freeList(struct list *topnode)$/;"	f	typeref:typename:void
+freeList	linked_list.c	/^void freeList(struct list *topnode) {$/;"	f	typeref:typename:void
+insert_beg	circular_linked_list.c	/^void insert_beg(struct list **topnode, int data) {$/;"	f	typeref:typename:void
+insert_beg	douby_linked_list.c	/^void insert_beg(struct list **topnode, int data)$/;"	f	typeref:typename:void
+insert_beg	linked_list.c	/^void insert_beg(struct list **topnode, int data) {$/;"	f	typeref:typename:void
+insert_end	circular_linked_list.c	/^void insert_end(struct list **topnode, int data) {$/;"	f	typeref:typename:void
+insert_end	douby_linked_list.c	/^void insert_end(struct list **topnode, int data)$/;"	f	typeref:typename:void
+insert_end	linked_list.c	/^void insert_end(struct list **topnode, int data) {$/;"	f	typeref:typename:void
+insert_pos	circular_linked_list.c	/^void insert_pos(struct list *topnode, int data, int pos) {$/;"	f	typeref:typename:void
+insert_pos	douby_linked_list.c	/^void insert_pos(struct list *topnode, int data, int pos)$/;"	f	typeref:typename:void
+insert_pos	linked_list.c	/^void insert_pos(struct list *topnode, int data, int pos) {$/;"	f	typeref:typename:void
+list	circular_linked_list.c	/^struct list {$/;"	s	file:
+list	douby_linked_list.c	/^struct list$/;"	s	file:
+list	linked_list.c	/^struct list {$/;"	s	file:
+main	circular_linked_list.c	/^int main() {$/;"	f	typeref:typename:int
+main	douby_linked_list.c	/^int main()$/;"	f	typeref:typename:int
+main	linked_list.c	/^int main() {$/;"	f	typeref:typename:int
+next	circular_linked_list.c	/^  struct list *next;$/;"	m	struct:list	typeref:struct:list *	file:
+next	douby_linked_list.c	/^    struct list *next;$/;"	m	struct:list	typeref:struct:list *	file:
+next	linked_list.c	/^  struct list *next;$/;"	m	struct:list	typeref:struct:list *	file:
+prev	douby_linked_list.c	/^    struct list *prev;$/;"	m	struct:list	typeref:struct:list *	file:
+trav	circular_linked_list.c	/^void trav(struct list *topnode) {$/;"	f	typeref:typename:void
+trav	douby_linked_list.c	/^void trav(struct list *topnode, int forward)$/;"	f	typeref:typename:void
+trav	linked_list.c	/^void trav(struct list *topnode) {$/;"	f	typeref:typename:void
