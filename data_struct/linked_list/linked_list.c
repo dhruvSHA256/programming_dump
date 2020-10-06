@@ -1,65 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct list
-{
+struct list {
     int data;
     struct list *next;
 };
 
-void trav(struct list *topnode)
-{
+void trav(struct list *topnode) {
     struct list *currnode = topnode;
-    while (currnode)
-    {
+    while (currnode) {
         printf("%d\n", currnode->data);
         currnode = currnode->next;
     }
 }
 
-void insert_end(struct list **topnode, int data)
-{
+void insert_end(struct list **topnode, int data) {
     struct list *newnode = (struct list *)malloc(sizeof(struct list));
     newnode->data = data;
     newnode->next = NULL;
 
-    if (*topnode == NULL)
-    {
+    if (*topnode == NULL) {
         *topnode = newnode;
-    }
-    else
-    {
+    } else {
         struct list *currnode = *topnode;
-        while (currnode->next)
-        {
+        while (currnode->next) {
             currnode = currnode->next;
         }
         currnode->next = newnode;
     }
 }
 
-void insert_beg(struct list **topnode, int data)
-{
+void insert_beg(struct list **topnode, int data) {
     struct list *newnode = (struct list *)malloc(sizeof(struct list));
     newnode->data = data;
     newnode->next = *topnode;
     *topnode = newnode;
 }
 
-void insert_pos(struct list *topnode, int data, int pos)
-{
+void insert_pos(struct list *topnode, int data, int pos) {
     int i;
     struct list *newnode = (struct list *)malloc(sizeof(struct list));
     newnode->data = data;
     struct list *currnode = topnode;
-    for (i = 0; i < pos - 2; i++)
-    {
-        if (currnode->next)
-        {
+    for (i = 0; i < pos - 2; i++) {
+        if (currnode->next) {
             currnode = currnode->next;
-        }
-        else
-        {
+        } else {
             printf("Linkedlist smaller than given position");
             return;
         }
@@ -68,35 +54,27 @@ void insert_pos(struct list *topnode, int data, int pos)
     currnode->next = newnode;
 }
 
-void del_end(struct list *topnode)
-{
+void del_end(struct list *topnode) {
     struct list *currnode = topnode;
-    while (currnode->next->next)
-    {
+    while (currnode->next->next) {
         currnode = currnode->next;
     }
     free(currnode->next);
     currnode->next = NULL;
 }
 
-void del_beg(struct list **topnode)
-{
+void del_beg(struct list **topnode) {
     struct list *currnode = *topnode;
     *topnode = currnode->next;
     free(currnode);
 }
-void del_pos(struct list *topnode, int pos)
-{
+void del_pos(struct list *topnode, int pos) {
     int i;
     struct list *currnode = topnode;
-    for (i = 0; i < pos - 2; i++)
-    {
-        if (currnode->next)
-        {
+    for (i = 0; i < pos - 2; i++) {
+        if (currnode->next) {
             currnode = currnode->next;
-        }
-        else
-        {
+        } else {
             printf("Linkedlist smaller than given position");
             return;
         }
@@ -106,20 +84,17 @@ void del_pos(struct list *topnode, int pos)
     free(tempnode);
 }
 
-void freeList(struct list *topnode)
-{
+void freeList(struct list *topnode) {
     struct list *tmp;
 
-    while (topnode != NULL)
-    {
+    while (topnode != NULL) {
         tmp = topnode;
         topnode = topnode->next;
         free(tmp);
     }
 }
 
-int main()
-{
+int main() {
     struct list *topnode = NULL;
 
     insert_end(&topnode, 98);

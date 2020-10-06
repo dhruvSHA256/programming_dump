@@ -4,8 +4,7 @@
 
 void selection_sort(int *array, int n);
 
-int main()
-{
+int main() {
     int i, n;
     int array[MAX];
     printf("\nEnter Size of Array : ");
@@ -13,8 +12,7 @@ int main()
     scanf("%d", &n);
 
     printf("\nEnter Elements of Array : ");
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         scanf("%d", &array[i]);
     }
 
@@ -22,22 +20,17 @@ int main()
 
     printf("\nSorted Array : ");
 
-    for (i = 0; i < n; i++)
-    {
+    for (i = 0; i < n; i++) {
         printf("%d ", array[i]);
     }
     return 0;
 }
 
-void selection_sort(int *array, int n)
-{
+void selection_sort(int *array, int n) {
     int idx, temp;
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = i; j < n; j++)
-        {
-            if (array[i] > array[j])
-                idx = j;
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = i; j < n; j++) {
+            if (array[i] > array[j]) idx = j;
         }
         temp = array[i];
         array[i] = array[idx];
