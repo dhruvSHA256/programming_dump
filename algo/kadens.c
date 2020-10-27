@@ -1,6 +1,5 @@
 #include <limits.h>
 #include <stdio.h>
-
 // max sum subarray in o(n)
 
 int max(int a, int b) { return a > b ? a : b; }
